@@ -48,7 +48,6 @@ export default {
   },
   methods: {
     selectItem(item) {
-      console.log('sasd', item)
       this.selectedItem = this.items[item];
     },
   },

@@ -1,46 +1,25 @@
-# saga-v2
+# SAGA interface demo
 
-This template should help get you started developing with Vue 3 in Vite.
+A small Vue interface prototype for Qaring's SAGA concept. It lets a viewer select a healthcare scenario and inspect the corresponding card. The repository contains the interface, assets, and routing.
 
-## Recommended IDE Setup
+This is an early demo. Scenario descriptions are placeholders and the Play button is not connected to a journey player. There is no backend or AI generation pipeline in this repository.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Run locally
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+```bash
+npm ci
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+Open the URL printed by Vite. The home page introduces SAGA; `/demo` contains the scenario selector.
 
-```sh
+## Development
+
+```bash
+npm run type-check
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+`npm run lint` applies fixes, and `npm run format` formats `src/`. The app uses Vue 3, TypeScript tooling, Vite, Bootstrap, and MDB Vue components.
 
-```sh
-npm run lint
-```
+The main components are [`HomeViewer.vue`](src/components/HomeViewer.vue), [`DemoViewer.vue`](src/components/DemoViewer.vue), and [`Dropdown.vue`](src/components/Dropdown.vue). Healthcare scenarios are demonstration content.
