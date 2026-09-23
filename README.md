@@ -11,7 +11,9 @@ npm ci
 npm run dev
 ```
 
-Open the URL printed by Vite. The home page introduces SAGA; `/demo` contains the scenario selector.
+Open the URL printed by Vite. The home page introduces SAGA; `/#/demo` contains the scenario selector.
+
+[View the demo](https://shreyan2020.github.io/saga-interface-demo/). The build uses relative asset paths so it works under a GitHub Pages repository URL.
 
 ## Development
 
